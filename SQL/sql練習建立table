@@ -1,0 +1,3 @@
+create table asc(
+    id serial primary key
+);
