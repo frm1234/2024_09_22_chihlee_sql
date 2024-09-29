@@ -1,2 +1,2 @@
-create database my_database_a06;
-drop database if EXISTS my_database06;
+create database mydatabase_a06;
+drop database if EXISTS mydatabase_a06;
