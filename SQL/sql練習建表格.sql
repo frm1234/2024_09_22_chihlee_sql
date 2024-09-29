@@ -9,11 +9,22 @@ create table if not exists hospital (
 );
 
 CREATE TABLE IF NOT EXISTS hospital1 (
-    A serial primary key,
-    B VARCHAR(5) NOT NULL,
-	C VARCHAR(30) NOT NULL UNIQUE,
-	d VARCHAR(15),
-	e VARCHAR(7),
-	f VARCHAR(7),
-	g VARCHAR(50)
+    id_ serial primary key,
+    state_ VARCHAR(5) NOT NULL,
+	name_ VARCHAR(30) NOT NULL UNIQUE,
+	phone VARCHAR(15),
+	ext VARCHAR(7),
+	contact VARCHAR(7),
+	address VARCHAR(50)
+);
+
+/*城市,啟始時間,結束時間,最高溫度,最低溫度,感覺*/
+CREATE TABLE IF NOT EXISTS weather (
+    id serial primary key,
+    city varchar(30) not null,
+	start_time timestamp,
+	end_time timestamp,
+	high_temp real,
+	low_temp real,
+	feel varchar(20)
 );
