@@ -34,3 +34,8 @@ ORDER BY id desc ;
 select *
 from station
 ORDER BY e_name ;
+
+select *
+from station
+ORDER BY e_name 
+limit 10;
