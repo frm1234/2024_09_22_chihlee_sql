@@ -10,3 +10,8 @@ insert into student values (1,'小白','英語',50);
 insert into student values (2,'小紅','化學',60);
 insert into student values (3,'小綠','生物',70);
 insert into student values (4,'小紅','會計',80);
+
+update student
+set major ='英語文學'
+where major = '英語'
+returning *;

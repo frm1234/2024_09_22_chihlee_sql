@@ -20,4 +20,6 @@ values('大黑','電子');
 DELETE from student
 where student_id > 5;
 
+drop table if exists student;
+
 select * from student;
