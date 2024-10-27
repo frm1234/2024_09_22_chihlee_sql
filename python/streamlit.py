@@ -1,6 +1,4 @@
 import streamlit as st
-
-
 import psycopg2
 conn = psycopg2.connect(
     database="render992",
